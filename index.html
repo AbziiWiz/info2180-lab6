@@ -3,12 +3,41 @@
 
     <head>
         <script src="index.js"> </script>
+        <link rel="stylesheet" href="dictionary.css" type="text/css" />
     </head>
 
     <body>
     
-        <p>Click search to get definition of word.</p>
-        <button id = "Btn">SEARCH</button>
+    
+    <div class="banner">
+        
+        <!--<img src="logo.jpg" alt="A-Z">-->
+        Web Dictionary</div>
+        
+    <div id="dictionary">
+        <div class="search">
+            <form action="">
+                This dictionary consists of definitions for the following words :  ajax, definition, bar, html, css, javscript or php. 
+                <br>
+                <br>
+                Enter Word: <input type="text" id="word"/>    
+                <button id="Btn">SEARCH</button>
+                <br>
+                To get all the definitions click
+                <button id="dBtn">GET ALL DEFINITIONS</button>
+            </form>
+        </div>
+        
+        <div id="result">
+            
+            <p>Result</p>
+            <p id="definition">Your definition will go here...</p>
+        </div>
+        
+        
+    </div>
+        <!--<p>Click search to get definition of word.</p>
+        <button id="Btn">SEARCH</button>-->
     
     </body>
 

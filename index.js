@@ -2,21 +2,32 @@
 
 window.onload= function (){
 
-    document.getElementById("Btn").addEventListener("click", function(){
+    
+
+    document.getElementById("Btn").addEventListener("click", function(e){
+          
+          
+          e.preventDefault();
+          
           var x = new XMLHttpRequest();
            x.onreadystatechange = function(){
-               if(x.readyState === XMLHttpRequest.DONE) {
-                    if(x.status === 200){
+               //alert("So far so good");
+               //alert(x.readyState + " " + x.status);
+               if(x.readyState == XMLHttpRequest.DONE) {
+                    if(x.status == 200){
                         
-                        alert(x.responseText); 
+                        document.getElementById("definition").innerHTML = x.responseText;
                     }
                     else {
                            alert("Issues with request");
                     }
-               } 
+               }
            };
            
-              x.open("GET", "request.php?q=definition", true);
+           var text =document.getElementById('word').value;
+           var key = text;
+           
+              x.open("GET", "request.php?q=" + key, true);
               x.send();
     });
         
