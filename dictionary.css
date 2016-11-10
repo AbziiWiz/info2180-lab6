@@ -34,7 +34,7 @@
 
 #result{
     background-color: #DCDCDC;
-    height: 80px;
+    height: auto;
     width: 700px;
     /*margin:auto;*/
     margin-left: 55px;
@@ -44,22 +44,21 @@
     padding-left: 10px;
     /*Enter different font styling*/
     font-family: Verdana, sans-serif;
-	font-size: 25px;
-	font-weight: bold;
-	/*font-style: italic;
+	/*font-size: 25px;
+	font-style: italic;
 	margin-top: 5px;*/
 }
 
 #dictionary{
     background-color: #DCDCDC;
-    height: 400px;
+    /*height: 400px;*/
+    height:auto;
     width: 900px;
     margin:auto;
     /*padding-right: 60px;*/
     padding: 20px;
     font-family: Verdana, sans-serif;
-	font-size: 15px;
-	font-weight: bold;
+	/*font-size: 15px;*/
 	font-style: italic;
 	margin-top: 5px;
 	/*border-bottom: 1px solid black;*/
